@@ -1,0 +1,14 @@
+@font-face { 
+    font-family : 'SeoulNamsanM';
+    src : url('font/SeoulNamsanM_1.woff'); 
+}
+body {
+    background: black;
+    color: white;
+    font-family: 'SeoulNamsanM';
+    text-align: center;
+    perspective: 800px;    
+}
+a {
+    color: white;
+}

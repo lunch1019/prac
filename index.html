@@ -1,0 +1,56 @@
+<?php 
+require_once('./php/sessionchk.php');
+?>
+
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel= "stylesheet" type="text/css" href="style/index.css">
+    <meta charset="UTF-8" />
+    <title>IWJGH Project</title>
+</head>
+<body>
+    <div>
+      <h1>IWJGH Project - 칼퇴 타이머</h1>
+      <hr />
+      <h2>당신의 목표 퇴근시간을 입력하세요.</h2>
+      <h4>あなたが目標とした時間の一時間前からタイマーが赤に変わります。</h4>
+      <h4>Таймер становится красным после 1 часа до того, как вы нацелились.</h4>
+      <h4>현재 테스트 중인 기능입니다.</h4>
+      <h4>혹시 꼬우시다면 github 이슈에 murikubo를 언급.</h4>
+      <h4>혹시...꼬우신가요...?</h4>
+      <h4>꼬우면...아시죠...??</h4>
+      <h4>TEST Ver. - 2017.11.03_4</h4> 
+
+      <!-- 이후 어떤 것이던 수정 후 브라우저 캐시 적용 확인을 위해 위의 버전을 수정해주세요. -->
+      <!-- <양식> TEST ver. - 년도.월.일_그 날의 x번째 수정 -->
+      <div class="serval_says_korega_warp_nano_sugoi">
+        <div class=".kaban_says_serval_chan_korewa_minus_dayo">
+          <!-- <button id="test_bt">Test Button</button> -->
+          오전<input type="radio" name="gozen_gogou" value="1">
+          오후<input type="radio" name="gozen_gogou" value="2">
+          <input type="number" id="want_time_hour" class="time_input" step="24">시
+          <input type="number" id="want_time_min" class="time_input" step="60">분
+      </div>
+    </div>
+      <div class="center" align="center"> 
+        <div class="clock center" id="clock">
+        </div>
+      </div>
+    </div>
+</body>
+  <footer>
+    <h5>I want just go home project</h5>
+    <h5><a href="http://maware.dothome.co.kr/">서버 릴리즈 사이트 연결</a></h5>
+    <h5><a href="https://skyaria2016.github.io/table">?????</a></h5>
+    <h5><a href="./list.html">프로젝트 목록</a></h5>
+    <div class="party_wrap">
+      <div class="party_wrap_wrap">  
+        <button id="party_time" class="party_button">PARTY TIME</button><br>
+        <button id="party_time_done" class="party_button">PARTY IS DONE</button>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
